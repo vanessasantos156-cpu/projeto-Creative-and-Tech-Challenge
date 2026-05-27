@@ -1,0 +1,149 @@
+/* página */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(135deg, #071b12, #103226);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+/* caixa principal */
+.container {
+    width: 90%;
+    max-width: 430px;
+
+    padding: 35px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    border: 1px solid rgba(129, 199, 132, 0.2);
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* título */
+h1 {
+    margin: 0;
+
+    text-align: center;
+
+    font-size: 32px;
+
+    color: white;
+
+    text-transform: capitalize;
+}
+
+/* subtítulo */
+p {
+    text-align: center;
+
+    color: #c8e6c9;
+
+    font-size: 16px;
+
+    margin-bottom: 25px;
+}
+
+/* formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* labels */
+label {
+    margin-top: 14px;
+    margin-bottom: 6px;
+
+    color: #d8f3dc;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* campos */
+input {
+    padding: 14px;
+
+    border-radius: 12px;
+
+    border: 2px solid rgba(76, 175, 80, 0.3);
+
+    background: rgba(255, 255, 255, 0.08);
+
+    color: white;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+/* placeholder */
+input::placeholder {
+    color: #b7cdb9;
+}
+
+/* foco */
+input:focus {
+    border-color: #66bb6a;
+
+    box-shadow: 0 0 12px rgba(102, 187, 106, 0.25);
+}
+
+/* botão */
+button {
+    margin-top: 28px;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 14px;
+
+    background: linear-gradient(135deg, #43a047, #2e7d32);
+
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* efeito */
+button:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 18px rgba(67, 160, 71, 0.3);
+}
+
+/* tablet */
+@media (min-width: 768px) {
+    .container {
+        max-width: 500px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 550px;
+    }
+}

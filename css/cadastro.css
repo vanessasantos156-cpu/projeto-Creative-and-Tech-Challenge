@@ -1,65 +1,148 @@
-body{
+
+/* página */
+body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #7c9cb1;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(135deg, #071b12, #103226);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
 }
 
-.container{
-    width: 420px;
-    margin: 70px auto;
-    background: #e6eef3;
+/* caixa */
+.container {
+    width: 90%;
+    max-width: 450px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(129, 199, 132, 0.2);
+
+    border-radius: 20px;
+
     padding: 35px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
 
-h1{
+/* título */
+h1 {
+    margin: 0;
+
     text-align: center;
-    margin-bottom: 8px;
+
+    font-size: 32px;
+
+    color: #ffffff;
 }
 
-p{
+/* subtítulo */
+p {
     text-align: center;
-    color: #666;
+
+    color: #b8d8be;
+
+    font-size: 16px;
+
     margin-bottom: 25px;
 }
 
-label{
-    display: block;
-    margin-bottom: 6px;
-    margin-top: 15px;
-    font-weight: bold;
+/* form */
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-input{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-sizing: border-box;
+/* labels */
+label {
+    color: #d8f3dc;
+
     font-size: 15px;
+    font-weight: bold;
+
+    margin-top: 14px;
+    margin-bottom: 6px;
 }
 
-button{
-    width: 100%;
-    margin-top: 25px;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    background: #2d6cdf;
-    color: white;
+/* inputs */
+input {
+    background-color: rgba(255, 255, 255, 0.08);
+
+    border: 2px solid rgba(76, 175, 80, 0.3);
+
+    border-radius: 12px;
+
+    padding: 14px;
+
     font-size: 16px;
+
+    color: white;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+/* placeholder */
+input::placeholder {
+    color: #b7cdb9;
+}
+
+/* foco */
+input:focus {
+    border-color: #66bb6a;
+
+    box-shadow: 0 0 12px rgba(102, 187, 106, 0.25);
+}
+
+/* botão */
+button {
+    margin-top: 28px;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 14px;
+
+    background: linear-gradient(135deg, #43a047, #2e7d32);
+
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
     cursor: pointer;
+
+    transition: 0.3s;
 }
 
-button:hover{
-    background: #1f4fb3;
+/* hover */
+button:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 18px rgba(67, 160, 71, 0.3);
 }
 
-a{
-    display: block;
-    text-align: center;
-    margin-top: 18px;
-    text-decoration: none;
-    color: #2d6cdf;
+/* tablet */
+@media (min-width: 768px) {
+    .container {
+        max-width: 500px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 550px;
+    }
 }
